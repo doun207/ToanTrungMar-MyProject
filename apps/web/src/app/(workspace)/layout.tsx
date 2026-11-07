@@ -1,7 +1,7 @@
-import React from 'react';
-import { WorkspaceShell } from '@/core/layout/WorkspaceShell';
-
-export default function WorkspaceLayout({ children }: { children: React.ReactNode }) {
-  return <WorkspaceShell>{children}</WorkspaceShell>;
+export default function WorkspaceLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div className="min-h-screen bg-slate-900">{children}</div>;
 }
-
