@@ -88,7 +88,7 @@ export default function AIDesignWorkspace() {
       {/* ================= 2. MAIN LAYOUT 3 CỘT ================= */}
       <div className="flex flex-1 overflow-hidden">
         
-        {/* --- CỘT TRÁI: QUẢN LÝ DỰ ÁN & KHO ẢNH DỰ ÁN (CHÍNH XÁC MẪU GỐC) --- */}
+        {/* --- CỘT TRÁI: QUẢN LÝ DỰ ÁN & KHO ẢNH DỰ ÁN --- */}
         <aside className="w-72 border-r border-slate-800 bg-slate-950 p-3 flex flex-col gap-3 shrink-0 overflow-y-auto">
           <div>
             <div className="flex items-center justify-between mb-2">
@@ -164,7 +164,7 @@ export default function AIDesignWorkspace() {
 
           <hr className="border-slate-800/80" />
 
-          {/* KHO ẢNH DỰ ÁN (SỬA LẠI CHUẨN 100% THEO HÌNH MẪU CỦA BẠN) */}
+          {/* KHO ẢNH DỰ ÁN */}
           <div className="flex-1 flex flex-col">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-300 uppercase tracking-wider">
@@ -176,7 +176,7 @@ export default function AIDesignWorkspace() {
               </button>
             </div>
             
-            {/* Tab Pill bo góc nhẵn */}
+            {/* Tab Pill */}
             <div className="bg-slate-900/90 p-1 rounded-xl flex gap-1 mb-3 text-xs border border-slate-800/80">
               <button 
                 onClick={() => setPhotoTab("tech")}
@@ -200,10 +200,8 @@ export default function AIDesignWorkspace() {
               </button>
             </div>
 
-            {/* Danh sách Thumbs Ảnh có Checkbox & Nút Đổi tên/Tải/Xóa */}
+            {/* Danh sách Thumbs Ảnh */}
             <div className="grid grid-cols-2 gap-2 mb-4">
-              
-              {/* Card Ảnh 1 */}
               <div className="border border-slate-800 bg-slate-900/90 rounded-xl p-1 flex flex-col justify-between overflow-hidden group">
                 <div className="h-20 bg-blue-700 rounded-lg relative overflow-hidden flex items-center justify-center">
                   <input type="checkbox" className="absolute top-1.5 left-1.5 w-3.5 h-3.5 rounded accent-blue-600 cursor-pointer" />
@@ -218,7 +216,6 @@ export default function AIDesignWorkspace() {
                 </div>
               </div>
 
-              {/* Card Ảnh 2 (Đang dùng) */}
               <div className="border border-blue-500/60 bg-blue-950/20 rounded-xl p-1 flex flex-col justify-between overflow-hidden relative">
                 <div className="h-20 bg-slate-800 rounded-lg relative overflow-hidden flex items-center justify-center">
                   <input type="checkbox" className="absolute top-1.5 left-1.5 w-3.5 h-3.5 rounded accent-blue-600 cursor-pointer z-10" />
@@ -236,7 +233,6 @@ export default function AIDesignWorkspace() {
                   </div>
                 </div>
               </div>
-
             </div>
 
             <div className="mt-auto flex flex-col gap-1.5">
@@ -249,7 +245,6 @@ export default function AIDesignWorkspace() {
             </div>
           </div>
         </aside>
-
 
         {/* --- CỘT GIỮA --- */}
         <main className="flex-1 flex flex-col bg-slate-900 overflow-hidden relative">
@@ -333,10 +328,8 @@ export default function AIDesignWorkspace() {
           </div>
         </main>
 
-
         {/* --- CỘT PHẢI --- */}
         <aside className="w-80 border-l border-slate-800 bg-slate-950 flex flex-col shrink-0 h-full overflow-hidden">
-          
           <div className="flex border-b border-slate-800 px-3.5 pt-2.5 gap-5 text-xs font-medium shrink-0 bg-slate-950">
             <button 
               onClick={() => setRightTab("ai")}
@@ -361,7 +354,6 @@ export default function AIDesignWorkspace() {
           </div>
 
           <div className="p-3 flex-1 overflow-y-auto flex flex-col gap-2.5 no-scrollbar">
-            
             <div className="p-2.5 bg-slate-900/90 border border-slate-800 rounded-xl shrink-0">
               <div className="flex items-start justify-between gap-1">
                 <h2 className="text-[11px] font-semibold text-white leading-snug">
